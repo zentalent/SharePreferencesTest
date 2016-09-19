@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Account:"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_accountText"
+                android:maxLines="1"
+                android:layout_span="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Password:"/>
+            <EditText
+                android:layout_height="wrap_content"
+
+                android:id="@+id/reg_passwordText"
+                android:maxLines="1"
+                android:layout_span="1"/>
+        </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Age:"/>
+        <EditText
+            android:layout_height="wrap_content"
+
+            android:id="@+id/reg_ageText"
+            android:maxLines="1"
+            android:layout_span="1"/>
+    </TableRow>
+
+
+        <RadioGroup
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/merridGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/single"
+                android:text="Single"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/merried"
+                android:text="Merried"/>
+        </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/reg_signup"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看"
+        android:id="@+id/load"
+        />
+
+</TableLayout>
